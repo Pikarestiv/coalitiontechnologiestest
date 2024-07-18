@@ -1,13 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Cross-browser scrollbar styling */
+  scrollbar-width: thin; /* "auto", "thin", or "none" */
+  scrollbar-color: #072635 #e3e4e6; /* Thumb and track color */
+
+  ::-webkit-scrollbar {
+    width: 6px; /* Width of the vertical scrollbar */
+    height: 6px; /* Height of the horizontal scrollbar */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #e3e4e6; /* Track color */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #072635; /* Thumb color */
+    border-radius: 3px; /* Rounded corners */
+  }
+
+  color: #072635;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.blood-pressure-chart-container {
+  width: 417px;
+  height: 187px;
+}
+
+@media screen and (max-width: 512px) {
+  .blood-pressure-chart-container {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .blood-pressure-chart-container {
+    width: 280px;
+    height: 160px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .blood-pressure-chart-container {
+    width: 230px;
+    height: 120px;
+  }
 }
