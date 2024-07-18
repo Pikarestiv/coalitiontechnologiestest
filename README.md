@@ -1,46 +1,71 @@
-# Getting Started with Create React App
+# Patient Dashboard Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a submission by Okwudili Joshua Odumodu for the frontend engineer position at Coalition Technologies. It is a React application that fetches mock patient data and displays it in a user-friendly dashboard.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Patient Dashboard Application](#patient-dashboard-application)
+  - [Table of Contents](#table-of-contents)
+  - [Description](#description)
+  - [Features](#features)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Dependencies](#dependencies)
+  - [Author](#author)
 
-### `npm start`
+## Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This React application fetches mock patient data from [Coalition Technologies Patient Data API](https://app.testedrecruits.com/test/take/1658/973004) and displays it in a dashboard. The dashboard consists of a patient list, diagnosis history, and patient information. The design for this application was based on the mockups provided by Coalition Technologies at [Adobe XD](https://xd.adobe.com/view/121254c9-532f-4772-a1ba-dfe529a96b39-4741/).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Displays a list of patients with their profile picture, name, gender, and age.
+- Shows detailed information about the selected patient.
+- Displays diagnosis history in a line chart for systolic and diastolic blood pressure.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+To set up and run this project locally, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+    git clone https://github.com/pikarestiv/patient-dashboard.git
+    cd patient-dashboard
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Install dependencies**
 
-### `npm run eject`
+    Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed. Then, run:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    ```bash
+    npm install
+    ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Start the development server**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    ```bash
+    npm start
+    ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+    This will start the application on `http://localhost:3000`.
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Once the application is running, you can view the patient dashboard by navigating to `http://localhost:3000` in your web browser. The application will fetch the mock patient data from the API and display it in the dashboard.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Click on any patient in the list to view their detailed information and diagnosis history.
+- The diagnosis history chart displays systolic and diastolic blood pressure readings over time.
+
+## Dependencies
+
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
+- [Chart.js](https://www.chartjs.org/) - A JavaScript library for creating charts.
+- [react-chartjs-2](https://github.com/reactchartjs/react-chartjs-2) - React wrapper for Chart.js.
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework.
+
+## Author
+
+**Okwudili Joshua Odumodu**
+
+This project was developed as part of a technical test for the application for the role of frontend engineer at Coalition Technologies.
